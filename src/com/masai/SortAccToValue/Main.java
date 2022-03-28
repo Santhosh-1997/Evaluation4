@@ -21,7 +21,8 @@ public class Main {
 
         System.out.println("Before Sorting");
         for(Map.Entry<String,Employee> el : list){
-            System.out.println(el);
+            System.out.println(el.getKey());
+            System.out.println(el.getValue());
             System.out.println();
         }
 
@@ -54,7 +55,9 @@ public class Main {
 
         Set<Map.Entry<String,Employee>> newSet = newEmp.entrySet();
 
+        System.out.println("******************************************************");
         System.out.println("After Sorting");
+        System.out.println();
         for(Map.Entry<String,Employee> el : newSet){
             System.out.println(el.getKey());
             System.out.println(el.getValue());
